@@ -11,7 +11,10 @@ bttnOpen.onclick = (event)=>{
 
 bttClose.onclick = (event)=>{
     menu.classList.remove("active")
-    bttClose.classList.remove("show")
+    setTimeout(()=>{
+        bttClose.classList.remove("show")
+    },220)
+    
 }
 
 
