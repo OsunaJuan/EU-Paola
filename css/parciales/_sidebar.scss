@@ -1,0 +1,47 @@
+.sideBar{
+    
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: $EU_blue;
+    transition: all .3s ease;
+
+    .sideBar__navBar{
+        list-style: none;
+
+        .sideBar__item{
+            text-align: center;
+            a{
+                font-size: $txt_m;
+                color: $white;
+                text-decoration: none;
+            }
+            
+            .show{
+                display: flex;
+            }
+
+            button{
+                display: none;
+                justify-content: end;
+                width: 100%;
+                border: none;
+                margin-right: 4rem;
+                background-color: transparent;
+            }
+        }
+
+    }
+
+    
+
+}
+
+.active{   
+    width: 100%;  
+}
+
+
+

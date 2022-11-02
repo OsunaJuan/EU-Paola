@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto+Mono:wght@300;400;700&family=Roboto+Slab:wght@400;600;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  padding-block: 1rem;
+  background: linear-gradient(90deg, #082b7a, #0e47cb);
+  box-shadow: 0 0 6px 0 #0e0e0e;
+}
+.header .header__log {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+.header .header__log a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header__log a img {
+  width: 80%;
+}
+.header .header__navBar {
+  display: none;
+  justify-content: space-around;
+  width: 50%;
+  list-style: none;
+}
+.header .header__navBar .navBar__item {
+  text-align: center;
+}
+.header .header__navBar .navBar__item a {
+  font-size: 2rem;
+  color: #ffff;
+  text-decoration: none;
+}
+.header button {
+  position: absolute;
+  right: 1rem;
+  margin-right: 1rem;
+  border: none;
+  background-color: transparent;
+}
+.header button img {
+  width: 30px;
+  height: 30px;
+}
+
+.sideBar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #003399;
+  transition: all 0.3s ease;
+}
+.sideBar .sideBar__navBar {
+  list-style: none;
+}
+.sideBar .sideBar__navBar .sideBar__item {
+  text-align: center;
+}
+.sideBar .sideBar__navBar .sideBar__item a {
+  font-size: 2rem;
+  color: #ffff;
+  text-decoration: none;
+}
+.sideBar .sideBar__navBar .sideBar__item .show {
+  display: flex;
+}
+.sideBar .sideBar__navBar .sideBar__item button {
+  display: none;
+  justify-content: end;
+  width: 100%;
+  border: none;
+  margin-right: 4rem;
+  background-color: transparent;
+}
+
+.active {
+  width: 100%;
+}
+
+/*# sourceMappingURL=index.css.map */
