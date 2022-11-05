@@ -1,14 +1,11 @@
 .header{
     position: relative;
-    display: flex;
-   
+    display: flex;   
     align-items: center;
     justify-content: space-between;
     width: 100%;
     height: auto;
     padding-block: 1rem;
-
-
     background: linear-gradient(90deg,#082b7a,#0e47cb);
     box-shadow: 0 0 6px 0 rgb(14, 14, 14);
 
@@ -30,20 +27,24 @@
     }
 
     .header__navBar{
-        display: none;
+        display: none;        
         justify-content: space-around;
         width: 50%;
-
         list-style: none;
 
         .navBar__item{
             text-align: center;
+            padding-inline: 2rem;
             a{
                 font-size: $txt_m;
                 color: $white;
                 text-decoration: none;
             }
-        }      
+        }    
+        
+        @media screen and(min-width:768px) {
+            display: flex;
+        }
         
     }
 
@@ -58,6 +59,10 @@
         img{
             width: 30px;
             height: 30px;
+        }
+
+        @media screen and (min-width:768px) {
+            display: none;
         }
     }
 }

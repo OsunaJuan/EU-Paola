@@ -1,20 +1,27 @@
+
+@media screen and (min-width:768px) {
+    .sideBar{
+        display: none;
+    }    
+}
 .sideBar{
-    
     position: absolute;
     right: 0;
     top: 0;
-    width: 0;
+    width: 0%;
     height: 100%;
     background-color: $EU_blue;
     transition: all .3s ease;
 
     .sideBar__navBar{
+        display: none;
         list-style: none;
 
         .sideBar__item{
+            padding-block: 2rem;
             text-align: center;
             a{
-                font-size: $txt_m;
+                font-size: $txt_l;
                 color: $white;
                 text-decoration: none;
             }
@@ -39,9 +46,15 @@
 
 }
 
-.active{   
-    width: 100%;  
+.active{  
+       width: 100%;
+
+    .sideBar__navBar{
+        display: block;
+     }
+
 }
+
 
 
 
